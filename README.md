@@ -11,9 +11,9 @@
 
 ## 📸 Preview
 
-[![CodeSync Home Page]
+![CodeSync Home Page](./src/assets/codesync.png)
 
-> 🎬 Click the image above to watch the demo video on YouTube.
+
 
 ---
 

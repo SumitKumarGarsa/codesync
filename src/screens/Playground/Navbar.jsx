@@ -22,6 +22,7 @@ const NavbarContent = styled.button`
 
 const Logo = styled.img`
   width: 60px;
+  transform: rotate(180deg);
 `
 
 const MainHeading = styled.h1`
@@ -43,7 +44,7 @@ const Navbar = ({ isFullScreen }) => {
       }}>
         <Logo src={logo} />
         <MainHeading>
-          <span>Code</span> Deck
+          <span>Code</span>Sync
         </MainHeading>
       </NavbarContent>
     </NavbarContainer>

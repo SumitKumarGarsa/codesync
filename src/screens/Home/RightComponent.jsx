@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { IoTrashOutline } from 'react-icons/io5'
 import { BiEditAlt } from 'react-icons/bi'
 import { FcOpenedFolder } from 'react-icons/fc'
+import { SiCplusplus } from 'react-icons/si'
+import { DiJava, DiPython, DiJavascript1 } from 'react-icons/di'
 import logo from '../../assets/logo-small.png'
 import { ModalContext } from '../../context/ModalContext'
 import { PlaygroundContext } from '../../context/PlaygroundContext'
@@ -108,12 +110,41 @@ const CardContent = styled.div`
 const Logo = styled.img`
     width: 70px;
     margin-right: 1rem;
+    transform: rotate(180deg);
 
     @media (max-width: 425px){
         width: 50px;
         margin-right: 0.5rem;
     }
 `
+
+const IconWrapper = styled.div`
+    font-size: 70px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 425px){
+        font-size: 50px;
+        margin-right: 0.5rem;
+    }
+`
+
+const getLanguageIcon = (language) => {
+  switch (language.toLowerCase()) {
+    case 'cpp':
+      return <IconWrapper><SiCplusplus style={{ color: '#00599C' }} /></IconWrapper>;
+    case 'java':
+      return <IconWrapper><DiJava style={{ color: '#f89820' }} /></IconWrapper>;
+    case 'python':
+      return <IconWrapper><DiPython style={{ color: '#3776AB' }} /></IconWrapper>;
+    case 'javascript':
+      return <IconWrapper><DiJavascript1 style={{ color: '#F7DF1E' }} /></IconWrapper>;
+    default:
+      return <Logo src={logo} />;
+  }
+}
 const RightComponent = () => {
   const navigate = useNavigate();
 
@@ -171,7 +202,7 @@ const RightComponent = () => {
                     navigate(`/playground/${folderId}/${playgroundId}`)
                   }}>
                     <CardContainer>
-                      <Logo src={logo} />
+                      {getLanguageIcon(playground.language)}
                       <CardContent>
                         <p>{playground.title}</p>
                         <p>Language: {playground.language}</p>

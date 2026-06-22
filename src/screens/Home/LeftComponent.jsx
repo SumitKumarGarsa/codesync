@@ -27,6 +27,7 @@ const ContentContainer = styled.div`
 const Logo = styled.img`
     width: 165px;
     margin-bottom: 1rem;
+    transform: rotate(180deg);
 `
 
 const MainHeading = styled.h1`
@@ -73,7 +74,7 @@ const LeftComponent = () => {
         <StyledLeftComponent>
             <ContentContainer>
                 <Logo src={logo} alt="" />
-                <MainHeading> <span>Code</span> Deck</MainHeading>
+                <MainHeading> <span>Code</span>Sync</MainHeading>
                 <SubHeading>Code. Compile. Debug.</SubHeading>
                 <AddNewButton onClick={() => openModal({
                     show: true,

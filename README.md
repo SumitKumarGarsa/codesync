@@ -19,7 +19,7 @@
 
 ## 🚀 Live Project
 
-🔗
+🔗 https://codesync-flame.vercel.app/
 
 ---
 

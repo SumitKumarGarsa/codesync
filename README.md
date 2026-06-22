@@ -19,7 +19,7 @@
 
 ## 🚀 Live Project
 
-🔗 [https://code-deck.vercel.app/](https://code-deck.vercel.app/)
+🔗
 
 ---
 

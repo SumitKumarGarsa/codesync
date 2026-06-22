@@ -2,7 +2,7 @@
 
 > A powerful browser-based code playground with real-time compilation, multi-language support, and a feature-rich editor experience.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://code-deck.vercel.app/)
+[![Live Demo]
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Judge0](https://img.shields.io/badge/Judge0%20CE-API-blue?style=for-the-badge)](https://ce.judge0.com/)
 [![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)
